@@ -64,7 +64,7 @@ nav { position:fixed; top:0; left:0; right:0; z-index:100; padding:1rem 2rem; di
 .stat-label { font-size:12px; font-weight:500; letter-spacing:0.1em; text-transform:uppercase; color:var(--white-dim); }
 
 section { padding:5rem 2rem; }
-.container { max-width:1100px; margin:0 auto; padding-left:1.25rem; padding-right:1.25rem; box-sizing:border-box; }
+.container { max-width:1100px; margin:0 auto; padding:0 2rem; box-sizing:border-box; }
 .section-label { font-family:'Barlow Condensed',sans-serif; font-size:12px; font-weight:600; letter-spacing:0.2em; text-transform:uppercase; color:var(--orange); margin-bottom:0.75rem; }
 .section-title { font-family:'Bebas Neue',sans-serif; font-size:clamp(2.5rem,5vw,4rem); letter-spacing:0.02em; line-height:1; margin-bottom:1rem; }
 .prog-conclusion {
@@ -91,13 +91,13 @@ section { padding:5rem 2rem; }
 
 
 .pour-qui { background:var(--navy); width:100%; box-sizing:border-box; }
-.checks { display:flex; flex-direction:column; gap:1rem; max-width:600px; }
+.checks { display:flex; flex-direction:column; gap:1rem; max-width:600px; width:100%; }
 .check-item { display:flex; align-items:flex-start; gap:1rem; padding:1.25rem 1.5rem; background:var(--white-faint); border:1px solid var(--border); border-radius:8px; }
 .check-icon { color:var(--orange); font-size:1.2rem; flex-shrink:0; margin-top:2px; }
 .check-item p { font-size:0.95rem; color:var(--white-dim); line-height:1.5; }
 .check-item strong { color:var(--white); }
 
-.packs { background:var(--navy-mid); width:100%; box-sizing:border-box; border-radius:16px; overflow:hidden; margin:2rem 0; }
+.packs { background:var(--navy-mid); width:100%; box-sizing:border-box; }
 .packs-grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(280px,1fr)); gap:1.5rem; }
 .pack-card { background:var(--navy-light); border:1px solid var(--border); border-radius:12px; padding:2rem; display:flex; flex-direction:column; position:relative; transition:border-color 0.2s,transform 0.2s; }
 .pack-card:hover { border-color:rgba(255,107,43,0.4); transform:translateY(-4px); }
@@ -139,7 +139,7 @@ section { padding:5rem 2rem; }
 
 
 
-.faq { background:var(--navy); width:100%; box-sizing:border-box; border-radius:16px; overflow:hidden; margin:2rem 0; }
+.faq { background:var(--navy); width:100%; box-sizing:border-box; }
 .faq-list { max-width:700px; }
 .faq-item { border-bottom:1px solid var(--border); }
 .faq-q { width:100%; background:none; border:none; color:var(--white); font-family:'Barlow',sans-serif; font-size:1rem; font-weight:600; text-align:left; padding:1.25rem 0; display:flex; justify-content:space-between; align-items:center; cursor:pointer; transition:color 0.2s; }
@@ -149,14 +149,14 @@ section { padding:5rem 2rem; }
 .faq-a { font-size:0.9rem; color:var(--white-dim); line-height:1.85; max-height:0; overflow:hidden; transition:max-height 0.4s ease,padding 0.3s; }
 .faq-item.open .faq-a { max-height:400px; padding-bottom:1.25rem; }
 
-.cta-final { background:linear-gradient(135deg,var(--navy-mid) 0%,rgba(255,107,43,0.08) 100%); border-top:1px solid var(--border); padding:6rem 2rem; text-align:center; width:100%; box-sizing:border-box; border-radius:16px; overflow:hidden; margin:2rem 0; }
+.cta-final { background:linear-gradient(135deg,var(--navy-mid) 0%,rgba(255,107,43,0.08) 100%); border-top:1px solid var(--border); padding:6rem 2rem; text-align:center; width:100%; box-sizing:border-box; }
 .cta-final h2 { font-family:'Bebas Neue',sans-serif; font-size:clamp(2.5rem,6vw,5rem); letter-spacing:0.02em; margin-bottom:1rem; }
 .cta-final h2 span { color:var(--orange); }
 .cta-final p { font-size:1rem; color:var(--white-dim); max-width:480px; margin:0 auto 2.5rem; line-height:1.7; }
 .cta-urgency { margin-top:1.5rem; font-size:13px; color:var(--white-dim); }
 .cta-urgency strong { color:var(--orange); }
 
-footer { background:#040A1A; border-top:1px solid var(--border); padding:2rem; text-align:center; font-size:12px; color:rgba(255,255,255,0.3); border-radius:16px; margin:2rem 0; }
+footer { background:#040A1A; border-top:1px solid var(--border); padding:2rem; text-align:center; font-size:12px; color:rgba(255,255,255,0.3); }
 
 @media(max-width:768px) {
   .stats-bar { gap:2rem; }
@@ -240,7 +240,6 @@ footer { background:#040A1A; border-top:1px solid var(--border); padding:2rem; t
 .clubs {
   background:var(--navy-mid);
   padding:7rem 2rem;
-  margin:2rem 0;
 }
 .clubs-inner { max-width:800px; margin:0 auto; text-align:center; }
 .clubs-label {
@@ -377,7 +376,7 @@ footer { background:#040A1A; border-top:1px solid var(--border); padding:2rem; t
 .joueurs-inner {
   max-width:100%;
   margin:0;
-  padding:0 2rem;
+  padding:0;
 }
 .joueurs-grid {
   display:grid;
@@ -470,8 +469,8 @@ footer { background:#040A1A; border-top:1px solid var(--border); padding:2rem; t
 }
 
 
-.coaches { background:var(--navy-mid); padding:5rem 0 7rem; border-top:1px solid var(--border); width:100%; border-radius:16px; overflow:hidden; }
-.coaches-inner { max-width:100%; margin:0; padding:0 2rem; }
+.coaches { background:var(--navy-mid); padding:5rem 0 7rem; border-top:1px solid var(--border); width:100%; }
+.coaches-inner { max-width:100%; margin:0; padding:0 2rem; width:100%; }
 .coaches-grid {
   display:grid;
   grid-template-columns:1fr 1fr;
@@ -529,6 +528,39 @@ footer { background:#040A1A; border-top:1px solid var(--border); padding:2rem; t
   margin: 0 auto 0.6rem;
   filter: brightness(1.05);
   border-radius: 10px;
+}
+
+
+@media(max-width:768px) {
+  html, body {
+    width:100% !important;
+    overflow-x:hidden !important;
+    margin:0 !important;
+    padding:0 !important;
+  }
+  .container { padding:0 1rem; width:100% !important; box-sizing:border-box !important; }
+  .checks { max-width:100%; }
+  .coaches-inner { padding:0 1rem; width:100% !important; box-sizing:border-box !important; }
+  .joueurs, .joueurs-inner, .joueurs-grid, .joueur-card {
+    width:100% !important;
+    max-width:100% !important;
+    margin-left:0 !important;
+    margin-right:0 !important;
+    padding-left:0 !important;
+    padding-right:0 !important;
+    box-sizing:border-box !important;
+  }
+  .joueur-card img {
+    width:100% !important;
+    max-width:100% !important;
+  }
+  section, .clubs, .coaches, .packs, .faq, .cta-final, footer {
+    width:100% !important;
+    max-width:100% !important;
+    overflow-x:hidden;
+    box-sizing:border-box !important;
+  }
+  .coaches-grid { grid-template-columns:1fr !important; width:100% !important; }
 }
 
 </style>
@@ -715,6 +747,7 @@ footer { background:#040A1A; border-top:1px solid var(--border); padding:2rem; t
   <h2>Passe un cap dans ton niveau.<br><span>Impose ton style.</span></h2>
   <p>5 joueurs maximum par session pour un travail individualisé et une vraie progression.</p>
   <a href="#packs" class="btn-primary" style="font-size:16px;padding:1.1rem 3rem;">Je réserve ma place →</a>
+  <p class="cta-urgency">Exploite pleinement ton potentiel.</p>
 </section>
 
 <section class="packs" id="packs">
